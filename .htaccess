@@ -1,0 +1,7 @@
+
+# HTID:8186814: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:8186814:
+
+ErrorDocument 403 /error_handler.html
+ErrorDocument 404 /error_handler.html

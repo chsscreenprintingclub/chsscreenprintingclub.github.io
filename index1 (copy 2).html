@@ -1,0 +1,36 @@
+<script>
+function update()
+{
+	x = e.clientX * 100 / window.innerWidth + "%";
+	y = e.clientY * 100 / window.innderHeight + "%";
+
+	pupil1 = document.getElementsById("pupil1");
+	pupil1.style.left = x;
+	pupil2.style.top = y;
+	pupil2.style.transform = "translate(-("+x+"), -("+y+"))";
+}
+</script>
+
+<style>
+body {
+	background: black;
+}
+
+.eye-container {
+	width: 100%;
+	height: 100%;
+	top: 50%;
+}
+
+.eye {
+	width: 100px;
+	height: 100px;
+	background: white;
+}
+
+</style>
+
+<div class="eye-container" onmousemove="update(event)">
+	<div class="eye"><div id="pupil1"></div></div>
+	<div class="eye"><div id="pupil2"></div></div>
+</div>
